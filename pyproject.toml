@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ijynihanu-fallbackchain"
+version = "0.1.0"
+description = "描述多级回退策略，验证每级的触发条件、输出契约与终止条件。"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ijynihanu" }]
+keywords = ["resilience", "fallback", "patterns", "llm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ijynihanu.github.io"
+Repository = "https://github.com/ijynihanu/fallbackchain"
+Issues = "https://github.com/ijynihanu/fallbackchain/issues"
+
+[project.scripts]
+fallbackchain = "fallbackchain:main"
+
+[tool.setuptools]
+py-modules = ["fallbackchain"]
